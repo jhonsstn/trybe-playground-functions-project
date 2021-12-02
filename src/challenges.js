@@ -17,13 +17,15 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(stringArray) {
+  let newString = `${stringArray[stringArray.length - 1]}, ${stringArray[0]}`;
+  return newString;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let winPoints = wins * 3;
+  return winPoints + ties;
 }
 
 // Desafio 6
