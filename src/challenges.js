@@ -77,12 +77,28 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let codedString = string
+    .replace(/a/gi, '1')
+    .replace(/e/gi, '2')
+    .replace(/i/gi, '3')
+    .replace(/o/gi, '4')
+    .replace(/u/gi, '5');
+
+  return codedString;
 }
 
-function decode() {
-  // seu código aqui
+console.log(encode('This is an encoding test.'));
+
+function decode(string) {
+  let decodedString = string
+    .replace(/1/g, 'a')
+    .replace(/2/g, 'e')
+    .replace(/3/g, 'i')
+    .replace(/4/g, 'o')
+    .replace(/5/g, 'u');
+
+  return decodedString;
 }
 
 module.exports = {
