@@ -88,8 +88,6 @@ function encode(string) {
   return codedString;
 }
 
-console.log(encode('This is an encoding test.'));
-
 function decode(string) {
   let decodedString = string
     .replace(/1/g, 'a')
